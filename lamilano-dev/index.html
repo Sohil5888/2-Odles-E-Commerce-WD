@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="sec-one sec-one-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div class="sec-one-nav-logo">
+                        <img class="img-fluid" src="assets/Header_Logo.svg" alt="">
+                    </div>
+                </a>
+                <div class="d-flex gap">
+                    <a class="d-xs-block d-sm-block d-md-block d-lg-none py-2" href="#">
+                        <div class="" data-bs-toggle="modal" data-bs-target="#ModalForm3">
+                            <img class="img-fluid" src="assets/locationPin.svg" alt="">
+                        </div>
+                    </a>
+                    <a class="d-xs-block d-sm-block d-md-block d-lg-none py-2" href="#">
+                        <div class="s" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                            <img class="img-fluid" src="assets/profileLogo.svg" alt="">
+                        </div>
+                    </a>
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                    </button> -->
+                    <div class="menu-icon navbar-toggler btn-danger" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                        <button class="nav-trigger" type="button">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-body d-none d-lg-block">
+                        <div class="d-flex justify-content-between">
+                            <ul class="navbar-nav align-item-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Book</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Collection</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Delivery</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Cook at Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">PizzaExpress Club</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        More
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Offers</a></li>
+                                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                                        <li><a class="dropdown-item" href="#">Kids</a></li>
+                                        <li><a class="dropdown-item" href="#">Help</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="nav-item ">
+                                    <a class="nav-link" href="#">PizzaExpress Club</a>
+                                </li> -->
+                            </ul>
+                            <ul class="navbar-nav align-item-center">
+                                <div class="vr"></div>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ModalForm3">
+                                        <div class="d-flex">
+                                            <img src="assets/locationPin.svg" alt="">
+                                            <p class="mb-0 ps-2">Resturants</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <div class="vr"></div>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                                        <div class="d-flex">
+                                            <img src="assets/profileLogo.svg" alt="">
+                                            <p class="mb-0 ps-2">Login</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offcanvas-body d-xs-block d-sm-block d-md-block d-lg-none px-3">
+                        <ul class="navbar-nav align-item-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Book</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Collection</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Delivery</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Cook at Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">PizzaExpress Club</a>
+                            </li>
+                            <li>
+                                <div class="hr-line"></div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link-2" href="#">Offers</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link-2" href="#">Gifts</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link-2" href="#">Kids</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link-2" href="#">Help</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav align-item-center">
+                            <div class="hr-line"></div>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ModalForm3">
+                                    <div class="d-flex">
+                                        <img src="assets/locationPin.svg" alt="">
+                                        <p class="mb-0 ps-2">Resturants</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                                    <div class="d-flex">
+                                        <img src="assets/profileLogo.svg" alt="">
+                                        <p class="mb-0 ps-2">Login</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Login Form Popup -->
+        <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form action="">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3 text-center">
+                                <h5 class="modal-title h5">Login</h5>
+                                <button type="button" class=" btn-fb mx-auto w-100-1 my-2">
+                                    <a href="#">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="logo-w" src="assets/facebook.svg" alt="">
+                                            <p>Login with Facebook</p>
+                                        </div>
+                                    </a>
+                                </button>
+                                <button type="button" class=" btn-ggl mx-auto w-100-1 my-2">
+                                    <a href="#">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="logo-w" src="assets/instagram.svg" alt="">
+                                            <p>Login with Google</p>
+                                        </div>
+                                    </a>
+                                </button>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="text email" for="Username">E-mail address<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" name="username" class="form-control email-1" id="Username">
+                            </div>
+                            <div class="mb-3">
+                                <label class="text password" for="Password">Password<span
+                                        class="text-danger">*</span></label>
+                                <input type="password" name="password" class="form-control password-1" id="Password">
+                            </div>
+                            <div class="display">
+                                <div class="mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="remember" required="">
+                                    <label class="form-check-label text s-pswrd" for="remember">Show Password</label>
+
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="remember1" required="">
+                                    <label class="form-check-label text log-in" for="remember">Keep me login in</label>
+
+                                </div>
+                            </div>
+                            <div class="mb-3 text-center">
+
+                                <a href="#" class="text text-black">Forgot your Password?</a>
+                            </div>
+                            <div class="mb-3 text-c display justify-content-between width-1">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="remember" required="">
+
+                                    <label class="form-check-label text log-in" for="remember"><a href="#" id="demo"
+                                            onclick="myFunction()">Veryify you
+                                            are human</a></label>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <p><a href="#">Privacy</a></p>
+                                    <p><a href="#">Terms</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer pt-4">
+                            <button type="button" class="btn mx-auto w-100-1 btn-login"><a href="#">Login with
+                                    Email</a></button>
+                        </div>
+                        <p class="text-center ">Don't have an account? <a href="#" class="text-black "
+                                data-bs-toggle="modal" data-bs-target="#ModalForm2"><u>Register</u></a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ModalForm2" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Login Form -->
+                    <form action="">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3 text-center">
+                                <h5 class="modal-title h5">SIGN UP TO MY PIZZAEXPRESS</h5>
+                                <button type="button" class=" btn-fb mx-auto w-100 my-2">
+                                    <a href="#">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="logo-w" src="assets/facebook.svg" alt="">
+                                            <p>Login with Facebook</p>
+                                        </div>
+                                    </a>
+                                </button>
+                                <button type="button" class=" btn-ggl mx-auto w-100 my-2">
+                                    <a href="#">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="logo-w" src="assets/facebook.svg" alt="">
+                                            <p>Login with Google</p>
+                                        </div>
+                                    </a>
+                                </button>
+                                <p>Or</p>
+                                <button type="button" class=" btn-ggl mx-auto w-100 my-2">
+                                    <a href="#">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="logo-w" src="assets/facebook.svg" alt="">
+                                            <p>Sign up with email</p>
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                            <p class="text-center">Don't have an account? <a href="#" class="text-black"
+                                    data-bs-toggle="modal" data-bs-target="#ModalForm"><u>Sign in</u></a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Form Popup End-->
+
+
+        <!------ Location Pop up ------->
+        <div class="modal fade" id="ModalForm3" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content-1">
+                    <form action="">
+                        <div class="modal-body">
+                            <p class="p-1">Resturants</p>
+                            <div class="input-11 d-flex align-items-center">
+                                <input class="" type="search" name="" id="" placeholder="search location">
+                                <button class="s4-btn"><a href="#"><img src="assets/geoLocationRose.svg"
+                                            alt=""></a></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!------ Location pop up end -------->
+    </section>
+    <section class="sec-two">
+        <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"> -->
+        <div id="carouselExampleAutoplaying" class="carousel slide d-xs-block d-sm-block d-md-block d-lg-none"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                    aria-label="Slide 0"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/Pizza-1 Mobile.jpg" class="d-block object-fit" alt="...">
+                    <div class="carousel-caption carousel-caption-1">
+                        <h5 class="h5">PIZZAEXPRESS DELIVERS</h5>
+                        <p class="p">£10 off pizza* on your next PizzaExpress Delivers or Collection order.</p>
+                        <button class="btn btn-clr-1"><a href="#">Order for collection</a></button>
+                        <button class="btn btn-clr-1"><a href="#">Order for delivery</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="assets/Pizza-3 Mobile.jpg" class="d-block object-fit" alt="...">
+                    <div class="carousel-caption carousel-caption-3">
+                        <h5 class="h5">BRING THE PIZZERIA HOME</h5>
+                        <p class="p">Our new frozen meals with pizzazz.</p>
+                        <button class="btn btn-clr-3"><a href="#">Find out more</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="assets/Pizza-4 Mobile.jpg" class="d-block object-fit" alt="...">
+                    <div class="carousel-caption carousel-caption-4">
+                        <h5 class="h5">TURNS OUT, MUMS DO HAVE FAVOURITES</h5>
+                        <p class="p">Pizzas, that is. Mother's Day Celebration Menu, from just<br class="hide" /> 17.95.
+                        </p>
+                        <button class="btn btn-clr-4"><a href="#">Book a table</a></button>
+                        <button class="btn btn-clr-4"><a href="#">Find out more</a></button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev position-relative d-none d-md-none d-lg-block" type="button"
+                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon position-absolute po-1" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next position-relative d-none d-md-none d-lg-block" type="button"
+                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon position-absolute po-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="carouselExampleAutoplaying2" class="carousel slide d-none d-md-none d-lg-block"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide-to="2"
+                    aria-label="Slide 0"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/Pizza-1.jpg" class="bg-1 d-block" alt="...">
+                    <div class="carousel-caption carousel-caption-5">
+                        <h5 class="h5">PIZZAEXPRESS DELIVERS</h5>
+                        <p class="p">£10 off pizza* on your next PizzaExpress Delivers or Collection order.</p>
+                        <button class="btn btn-clr-5"><a href="#">Order for collection</a></button>
+                        <button class="btn btn-clr-5"><a href="#">Order for delivery</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="assets/Pizza-3.jpg" class="bg-1 d-block" alt="...">
+                    <div class="carousel-caption carousel-caption-6">
+                        <h5 class="h5">BRING THE PIZZERIA HOME</h5>
+                        <p class="p">Our new frozen meals with pizzazz.</p>
+                        <button class="btn btn-clr-6"><a href="#">Find out more</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="assets/Pizza-4.jpg" class="bg-1 d-block" alt="...">
+                    <div class="carousel-caption carousel-caption-7">
+                        <h5 class="h5">TURNS OUT,<br /> MUMS DO HAVE <br />FAVOURITES</h5>
+                        <p class="p">Pizzas, that is. Mother's Day Celebration Menu, from just<br class="hide" /> 17.95.
+                        </p>
+                        <button class="btn btn-clr-7"><a href="#">Book a table</a></button>
+                        <button class="btn btn-clr-7"><a href="#">Find out more</a></button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev position-relative" type="button"
+                data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon position-absolute po-1" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next position-relative" type="button"
+                data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+                <span class="carousel-control-next-icon position-absolute po-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="sec-three">
+        <div class="container">
+            <div class="text-center py-3 ">
+                <button tabindex="1" class="button-1 btn-clr-101" id="s3btn1" onclick="myFunction()">
+                    <a href="#">
+                        Book a table
+                    </a>
+                </button>
+                <button tabindex="2" class="button-2 btn-clr-101" id="s3btn2" onclick="myFunction()"><a href="#">Find a
+                        resturant</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="sec-four">
+        <div class="container mx-auto">
+            <div class="my-4 ">
+                <div id="s4input1">
+                    <div class="s4-input">
+                        <div class="input-1 d-flex align-items-center">
+                            <input class="" type="search" name="" id="" placeholder="search location">
+                            <button class="s4-btn"><a href="#"><img src="assets/geoLocation.svg" alt=""></a></button>
+                        </div>
+                        <div class="mt">
+                            <select name="" id="">
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Person</option>
+                                <option value="3">3 Person</option>
+                                <option value="4">4 Person</option>
+                                <option value="5">5 Person</option>
+                                <option value="6">6 Person</option>
+                                <option value="7">7 Person</option>
+                                <option value="8">8 Person</option>
+                                <option value="9">9 Person</option>
+                                <option value="10">10 Person</option>
+                                <option value="11">11 Person</option>
+                                <option value="12">12 Person</option>
+                                <option value="13">13 Person</option>
+                                <option value="14">14 Person</option>
+                                <option value="15">15 Person</option>
+                                <option value="16">16 Person</option>
+                                <option value="17">17 Person</option>
+                                <option value="18">18 Person</option>
+                                <option value="19">19 Person</option>
+                                <option value="20">20 Person</option>
+                                <option value="21">21 Person</option>
+                            </select>
+                        </div>
+                        <div class=" mt">
+                            <input type="text" class="input-date" id="datepicker" autocomplete="off"
+                                placeholder="Select a date">
+                        </div>
+                        <div class=" mt">
+                            <input type="time" class="form-control input-time" value="10:05 AM" />
+                        </div>
+                        <div class=" mt">
+                            <button class="button-4"><a href="#">Book now</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="s4input2">
+                    <div class="s4-input justify-content-center">
+                        <div class="mt ">
+                            <div class="input-2 d-flex align-items-center">
+                                <input class="" type="search" name="" id="" placeholder="search location">
+                                <button class="s4-btn"><a href="#"><img src="assets/geoLocation.svg" alt=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-five">
+        <div class="container py-3">
+            <div class="s5-grid-1">
+                <div class="s5-cart position-relative">
+                    <img src="assets/menu.svg" alt="">
+                    <h5 class="h5">Dine-in</h5>
+                    <p class="p">Enjoy your favourites in one of our pizzerias.</p>
+                    <button class="button-5 position-absolute po-4"><a href="#">View menu</a></button>
+                </div>
+                <div class="s5-cart position-relative">
+                    <img src="assets/menu.svg" alt="">
+                    <h5 class="h5">Delivery & Collection</h5>
+                    <p class="p">From our iconic Dough Balls to our thin and crispy Romana pizzas, enjoy all your
+                        favourites at home.</p>
+                    <button class="button-5 position-absolute po-4"><a href="#">View menu</a></button>
+                </div>
+                <div class="s5-cart position-relative">
+                    <img src="assets/menu.svg" alt="">
+                    <h5 class="h5">Cook At Home</h5>
+                    <p class="p">Inspired by your favourite meals from our restaurants, enjoy a selection of new dishes
+                        for you perfect night in. Our At Home range available in supermarkets. Check out our vegan
+                        range!</p>
+                    <button class="button-5 position-absolute po-4"><a href="#">View menu</a></button>
+                </div>
+            </div>
+            <div class="s5-2clm d-flex justify-content-between">
+                <div class="s5-left">
+                    <p class="p">YOUR MARBLE <br />TABLE AWAITS</p>
+                    <button class="button-6"><a href="#">Book a table</a></button>
+                </div>
+                <div>
+                    <div class="s5-right">
+                        <img class="img-fluid" src="assets/roseFiligree.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="s5-grid-2">
+                <div class="s5-cart-2 position-relative">
+                    <img class="img-s5" src="assets/Gift Card.jpg" alt="">
+                    <h5 class="h5">Gift of Pizza</h5>
+                    <p class="p">Give them the good stuff with a pre-paid pizza gift card.</p>
+                    <button class="button-5 position-absolute po-5"><a href="#">Find out more</a></button>
+                </div>
+                <div class="s5-cart-2 position-relative">
+                    <img class="img-s5" src="assets/Refer a friend.jpg" alt="">
+                    <h5 class="h5">Refer a Friend</h5>
+                    <p class="p">Introducing Refer a Friend! You can now invite your friends to join the PizzaExpress
+                        Club and you both get rewarded! Find out more below.</p>
+                    <button class="button-5 position-absolute po-5"><a href="#">Find out more</a></button>
+                </div>
+            </div>
+            <div class="s5-grid-3 my-4">
+                <div class="s5-cart-3 position-relative">
+                    <img class="img-s5" src="assets/Records_Banner_768x500.jpg" alt="">
+                    <h5 class="h5">PX Records</h5>
+                    <p class="p">PizzaExpress Live has launched its own record label. PX Records will release albums
+                        from new and established stars alongside a selection of music from our extensive archive of live
+                        recordings.</p>
+                    <button class="button-6 position-absolute po-6"><a href="#">Shop now</a></button>
+                </div>
+                <div class="s5-cart-3 position-relative">
+                    <img class="img-s5" src="assets/PEX Live band.jpg" alt="">
+                    <h5 class="h5">PizzaExpress Live</h5>
+                    <p class="p">See which shows are on at our PizzaExpress Live venues.</p>
+                    <button class="button-6 position-absolute po-6"><a href="#">See what's on</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <footer class="py-5">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="d-flex jus-content align-items-center">
+                        <div class="mb-4">
+                            <ul class="list-unstyled d-flex">
+                                <li><a href="https://www.facebook.com/lamilanopizza">
+                                        <div class="f-bg-1"></div>
+                                    </a></li>
+                                <li><a href="https://www.instagram.com/lamilanopizza/">
+                                        <div class="f-bg-2"></div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="f-bg-3"></div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="f-bg-4"></div>
+                                    </a></li>
+                                <li><a href="https://www.youtube.com/channel/UCRz6mNnGrqQBxhVKWcoXaBA">
+                                        <div class="f-bg-5"></div>
+                                    </a></li>
+                                <li><a href="#">
+                                        <div class="f-bg-6"></div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="dlvr-man d-none d-lg-block me-sm-0"></div>
+                    </div>
+                </div>
+                <div class="border opacity-50 mb-5"></div>
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-3 col-xl-2 mb-3 mt-sm-5 mt-xl-3">
+                        <h5 class="h5">Food</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Menu</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-body-secondary">Collection</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Delivery</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cook at
+                                    Home</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Allergens &
+                                    Nutritionals</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 col-xl-2 mb-3 mt-sm-5 mt-xl-3">
+                        <h5 class="h5">Bookings</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Book A
+                                    Table</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Offers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 col-xl-2 mb-3 mt-sm-5 mt-xl-3">
+                        <h5 class="h5">Explore</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">PizzaExpress
+                                    Live</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">PX
+                                    Records</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Behind the
+                                    Base</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-body-secondary">International</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Apple
+                                    Music</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 col-xl-2 mb-3 mt-sm-5 mt-xl-3">
+                        <h5 class="h5">Help</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact
+                                    Us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our
+                                    Responsibility</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-body-secondary">Sustainability</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investors
+                                    News</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-12 col-lg-12 col-xl-2 mb-3 mt-sm-5 mt-xl-3">
+                        <h5 class="h5">PizzaExpress Club</h5>
+                        <p class="text-body-secondary"><a href="#">Refer a Friend</a></p>
+                        <div class="d-flex">
+
+                            <a
+                                href="https://play.google.com/store/apps/details?id=delivery.fab.lamilanopizzeria.android&hl=en&gl=US&pli=1">
+                                <div class="play-str me-2"></div>
+                            </a>
+                            <a href="https://apps.apple.com/in/app/la-milano-pizzeria/id6467398149">
+                                <div class="app-str"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between pt-3">
+                    <div class="display flex-sm-row justify-content-between align-items-center">
+                        <div class=" d-lg-flex me-50 col-12 col-sm-6 col-md-6 col-lg-12 ">
+                            <p class="pe-4">© PizzaExpress 2023</p>
+                            <div class="">
+                                <ul class="d-lg-flex">
+                                    <li><a class="pe-4 col-sm-12" href="#">Investor relations</a></li>
+                                    <li><a class="pe-4 col-sm-12"
+                                            href="https://lamilano.pizza/privacy-policy-2/">Privacy policy</a></li>
+                                    <li><a class="pe-4 col-sm-12"
+                                            href="https://lamilano.pizza/terms-and-conditions/">Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" col-12 col-sm-6 col-md-6 d-lg-none ">
+                            <div class="dlvr-man"></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
